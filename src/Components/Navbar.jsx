@@ -56,7 +56,7 @@ class Navbar extends Component {
             </div>
             <div className="search d-flex justify-content-end align-items-baseline p-2 mt-3" onClick={ this.toggleDiv }>
               <p></p>
-              <i className="fas fa-search ml-3 icon-sm"></i>
+              <i className="nav-search fas fa-search ml-3 icon-sm"></i>
             </div>
           </div>
           { this.state.show && <RestaurantFinder 

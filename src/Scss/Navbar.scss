@@ -5,11 +5,14 @@
     width: 100%;
     z-index: 1000;
     background: #2c2b2b;
-    color: #fff;
+    color: $white;
 }
 .logo img {
     height: 2rem;
     width: auto;
+}
+.nav-search {
+    cursor: pointer;
 }
 .filter {
     border-bottom: 1px solid $dark-grey;
