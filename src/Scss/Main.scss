@@ -1,0 +1,135 @@
+/*
+
+Guia de estilo Principal Duo Gourmet
+
+1.Botões
+2.Inputs & Selects
+3.Ícones
+4.Tipografia
+5.Animações
+
+*/
+
+@import 'Variables.scss';
+
+/*Botões*/
+
+button {font-size: .8rem !important;}
+
+.btn-custom-grey {
+    background-color: $dark-grey;
+    color: $medium-grey;
+}
+.btn-custom-grey:hover,
+.btn-custom-grey:focus,
+.btn-custom-grey:active {
+    background-color: $dark-grey-secondary;
+    color: $medium-grey;
+    box-shadow: none;
+}
+.btn-cooking:active,
+.btn-cooking:focus,
+.btn-cooking.active, {
+    background-color: $medium-yellow;
+    color: $black !important;
+    outline: none;
+    box-shadow: none;
+    font-weight: 500;
+}
+.btn.btn-no-bg {
+    color: $medium-grey;
+}
+.btn-custom-yellow {
+    background-color: $medium-yellow;
+    color: $black;
+}
+
+/*Inputs & Selects*/
+
+.custom-select {
+    background: none;
+    color: $medium-grey;
+    border: 1px solid $dark-grey;
+    border-radius: .4rem;
+    font-size: .8rem;
+    padding-left: .5rem !important;    
+}
+
+/*Ícones*/
+
+.icon-sm { font-size: .8rem;}
+
+/*Tipografia*/
+
+body {font-family: 'Roboto', sans-serif;}
+p {font-size: .8rem;}
+h5 {font-size: 1.1rem;}
+
+/*Animações*/
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+.animation {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animation.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@media (print), (prefers-reduced-motion) {
+  .animation{
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}

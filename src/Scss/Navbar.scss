@@ -1,0 +1,50 @@
+@import 'Main.scss';
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #2c2b2b;
+    color: #fff;
+}
+.logo img {
+    height: 2rem;
+    width: auto;
+}
+.filter {
+    border-bottom: 1px solid $dark-grey;
+}
+.filter i {
+    color: $dark-grey-secondary;
+}
+.localization {
+    border-bottom: 1px solid $dark-grey;
+}
+.food-list {
+    overflow-x: scroll; 
+    height: 3.8rem;
+}
+.select-city {
+    padding-right: 1rem !important;
+}
+.food-list * {
+    margin-right: 1.4rem;
+}
+.food-list::-webkit-scrollbar-track {
+	background-color: rgb(48, 48, 48);
+}
+.food-list::-webkit-scrollbar {
+	height: .4rem;
+	background-color: #F5F5F5;
+}
+.food-list::-webkit-scrollbar-thumb {
+	background-color: #3d3d3d;
+}
+@media screen and (max-width: 768px) {
+    .select-city {
+        padding-right: 0rem !important;
+    }
+    .food-list::-webkit-scrollbar {
+        display: none;
+    }
+}
