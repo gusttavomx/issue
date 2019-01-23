@@ -102,6 +102,7 @@ handleChange=(event, cooking)=>{
           this.setState({
               ...this.state,
                   city: event.target.value,
+                  district: "Todos"
               })
               break;
 

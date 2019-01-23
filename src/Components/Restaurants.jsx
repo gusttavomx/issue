@@ -4,9 +4,14 @@ import '../Scss/Restaurants.scss'
 
 class PostList extends Component {
   render() {
+
+    let {Restaurants} = this.props
+
     return (
       <div className="container app d-flex flex-wrap">
-        {this.props.Restaurants.map((postDetail,index) => {
+        {
+          Restaurants.length===0? <div className="restaurants-msg col-12 d-flex justify-content-center">Não foram encontrados restaurantes.</div>:
+          Restaurants.map((postDetail,index) => {
           return ( 
             <div key={index} className="restaurant animation slow fadeIn p-3 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column">
               <div className="box p-3 d-flex justify-content-start align-items-center">
